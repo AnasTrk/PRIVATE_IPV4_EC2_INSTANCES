@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import json
-from lib2to3.pgen2.token import EQUAL
-from operator import eq
+
 import subprocess
 import sys
 from os.path import exists

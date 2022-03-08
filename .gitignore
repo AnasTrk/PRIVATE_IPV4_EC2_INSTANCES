@@ -1,2 +1,2 @@
-./*.json
-./get_ips.py
+*.json
+get_ips.py
