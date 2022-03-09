@@ -50,6 +50,6 @@ if f'{DOUBLE_PREFIX}{ENV}' in args:
             for addr in addresses['Addresses']:
                 if args[(index + 1)] == addr['Tags'][0]['Value']:
                     print(
-                        f"Public IP :: {addr['PublicIp']}")
+                        f"Public IP :: {addr['PublicIp']} \n Private IP :: {addr['PrivateIpAddress']}")
     except Exception:
         print(f'An error accured while excuting this commande please check --env')
