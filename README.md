@@ -1,14 +1,9 @@
-# PUBLIC_IPV4_EC2_INSTANCES
+## **PRIVATE_IPV4_EC2_INSTANCES**
 
-PYTHON SCRIPT
+### *get_ips_command*
+>*command that returns ec2 instances ips in a dynamic manner.*
 
-# GET_EC2_IPS
-
-## _command_
-
-command that returns ec2 instances ips in a dynamic manner.
-
-### usage (get_ips_v2.py)
+### Usage (get_ips_v2.py)
 
 ```python
 py .\get_ips_v2.py --env prod
@@ -29,7 +24,7 @@ py .\get_ips_v2.py --env prod
 > Merci.
 
 
-### usage (get_ips_v3.sh)
+### Usage (get_ips_v3.sh)
 
 
 
@@ -52,8 +47,29 @@ py .\get_ips_v2.py --env prod
 chmod +x .\get_ips_v3.sh
 ```
 
->Run script
+>***_Run script_***
 
 ```bash
 ./get_ips_v3.sh  -e prod-front  -c prod-server [-s]
 ```
+
+### Outputs
+##### case 1
+>in case you didn't specify the env (ec2 instance)
+>the result will be a table of all the ipv4 addresse of ec2 instances in that cluster
+> **e.g (prod-server) cluster** 
+
+[![Output1](https://bafybeihdgd7zbom64ms2tbtycuybugiz7ixxxid4cnqpf7reh5p7xkn75i.ipfs.dweb.link/output1.png)](https://bafybeihdgd7zbom64ms2tbtycuybugiz7ixxxid4cnqpf7reh5p7xkn75i.ipfs.dweb.link/output1.png)
+
+
+##### case 2
+>in case you  specify the env (ec2 instance)
+> **e.g (prod-front) cluster** 
+
+[![Output1](https://bafybeibym7gxyrshmnmek2phqbotzr2nwovrwgl5rapl4jpufomaw7olny.ipfs.dweb.link/output2.png)](https://bafybeibym7gxyrshmnmek2phqbotzr2nwovrwgl5rapl4jpufomaw7olny.ipfs.dweb.link/output2.png)
+
+
+@Author :: Anas TRAK.
+
+
+Thanks :)
