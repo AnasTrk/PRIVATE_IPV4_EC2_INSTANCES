@@ -8,7 +8,7 @@ PYTHON SCRIPT
 
 command that returns ec2 instances ips in a dynamic manner.
 
-### usage
+### usage (get_ips_v2.py)
 
 ```python
 py .\get_ips_v2.py --env prod
@@ -27,3 +27,34 @@ py .\get_ips_v2.py --env prod
 > pour change le nom du fichier , modifiez vous le constant FILE_NAME sur code .
 >
 > Merci.
+
+
+### usage (get_ips_v3.sh)
+
+
+#########################################################################################################
+#                                       USAGE                                                           #
+#   command :: get_ips_v3.sh [-e (env) <string>] [-s (save) <string>] [-c (cluster) <string>]           #
+#                                                                                                       #
+#                                                                                                       #
+#   [-e] :: this flag allows you sepcify the environement you're searching for .                        #
+#   [-s] :: this flag allows you save the output of command into a file (Not working yet just ignore)   #
+#   [-c] :: you can specify the cluster name that the environement belongs to .                         #
+#                                                                                                       #
+#   the aws cli command used in this script is aws describe-instances                                   #
+#   (Not like the one in get_ips_v2.py)                                                                 #
+#########################################################################################################
+
+
+
+>***_Give Execution permission to file ._***
+
+```bash
+chmod +x .\get_ips_v3.sh
+```
+
+>Run script
+
+```bash
+./get_ips_v3.sh  -e prod-front  -c prod-server [-s]
+```

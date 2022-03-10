@@ -31,17 +31,6 @@ do
     esac
 done
 
-aws --region $REGION \
-ec2 describe-instances \
---filters \
-"Name=instance-state-name,Values=running" \
-"Name=key-name,Values=$cluster" \
-"Name=tag-key,Values=prod-front" \
---query 'Reservations[*].Instances[*].[PrivateIpAddress]' \
---output text
-
-
-
 aws ec2 describe-instances \
     --region $REGION 
     --filters   Name=tag-key,Values=Name \
