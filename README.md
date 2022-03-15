@@ -54,19 +54,11 @@ chmod +x .\get_ips_v3.sh
 ```
 
 ### Outputs
-##### case 1
 >in case you didn't specify the env (ec2 instance)
 >the result will be a table of all the ipv4 addresse of ec2 instances in that cluster
 > **e.g (prod-server) cluster** 
 
-[![Output1](https://bafybeihdgd7zbom64ms2tbtycuybugiz7ixxxid4cnqpf7reh5p7xkn75i.ipfs.dweb.link/output1.png)](https://bafybeihdgd7zbom64ms2tbtycuybugiz7ixxxid4cnqpf7reh5p7xkn75i.ipfs.dweb.link/output1.png)
-
-
-##### case 2
->in case you  specify the env (ec2 instance)
-> **e.g (prod-front) cluster** 
-
-[![Output1](https://bafybeibym7gxyrshmnmek2phqbotzr2nwovrwgl5rapl4jpufomaw7olny.ipfs.dweb.link/output2.png)](https://bafybeibym7gxyrshmnmek2phqbotzr2nwovrwgl5rapl4jpufomaw7olny.ipfs.dweb.link/output2.png)
+[![Output1](https://bafybeigmupb2w7gmlz4tljuyyihqcpzimntapjwgeplcrg4k5rrhkjih3m.ipfs.dweb.link/script_examples.png)](https://bafybeigmupb2w7gmlz4tljuyyihqcpzimntapjwgeplcrg4k5rrhkjih3m.ipfs.dweb.link/script_examples.png)
 
 
 @Author :: Anas TRAK.
